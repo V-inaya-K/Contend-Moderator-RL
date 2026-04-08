@@ -1,0 +1,15 @@
+name: content_moderation_env
+version: 1.0
+
+observation:
+  content: string
+  step_count: int
+
+action:
+  label: string
+  severity: string
+  action_type: string
+  message: string
+
+reward:
+  value: float
