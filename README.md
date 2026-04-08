@@ -1,11 +1,22 @@
-# 🛡️ AI Content Moderation OpenEnv
+---
+title: AI Content Moderator OpenEnv
+emoji: 🛡️
+colorFrom: blue
+colorTo: purple
+sdk: docker
+sdk_version: "1.0"
+app_file: app.py
+pinned: false
+---
 
-* AI Content Moderation OpenEnv is a **real-world reinforcement learning environment** that simulates how modern platforms moderate user-generated content.
+# 🛡️ AI Content Moderator using OpenEnv
+
+* AI Content Moderator OpenEnv is a **real-world reinforcement learning environment** that simulates how modern platforms moderate user-generated content.
 * It evaluates AI agents on **multi-step decision-making tasks** including classification, severity detection, action selection, and explanation generation.
 
 ---
 
-## ✨ Demo
+## ✨ What Demo has
 
 * Log-based evaluation using OpenEnv-compliant `inference.py`
 * Produces structured outputs in `[START]`, `[STEP]`, `[END]` format
@@ -88,6 +99,18 @@
 
   * Fully Dockerized
   * Runs in constrained environments (CPU/memory limits)
+
+---
+
+## 🌐 API Endpoints
+
+The environment exposes OpenEnv-compatible HTTP endpoints:
+
+- **POST /reset** → Initialize environment  
+- **POST /step** → Perform action and receive next state  
+- **GET /state** → Get current environment state  
+
+These endpoints are used by automated validators and agent evaluation pipelines.
 
 ---
 
@@ -231,7 +254,5 @@ It is designed to be:
 * Adversarial content scenarios
 
 ---
-
-## 👨‍💻 Author
 
 Developed as part of OpenEnv benchmark submission.
