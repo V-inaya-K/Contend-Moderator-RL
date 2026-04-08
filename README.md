@@ -1,14 +1,3 @@
----
-title: AI Content Moderator OpenEnv
-emoji: 🛡️
-colorFrom: blue
-colorTo: purple
-sdk: docker
-sdk_version: "1.0"
-app_file: app.py
-pinned: false
----
-
 # 🛡️ AI Content Moderator using OpenEnv
 
 * AI Content Moderator OpenEnv is a **real-world reinforcement learning environment** that simulates how modern platforms moderate user-generated content.
