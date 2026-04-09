@@ -29,7 +29,6 @@
 #     step += 1
 #     text = obs.content.lower()
 
-#     # 🔥 REQUIRED OpenAI call (even minimal)
 #     try:
 #         _ = client.chat.completions.create(
 #             model=MODEL_NAME,
@@ -97,7 +96,6 @@ def run_episode():
         step += 1
         text = obs.content.lower()
 
-        # REQUIRED OpenAI call (minimal usage)
         try:
             _ = client.chat.completions.create(
                 model=MODEL_NAME,
@@ -130,7 +128,6 @@ def run_episode():
 
 
 def main():
-    # Run at least once (required for evaluation)
     run_episode()
 
 
